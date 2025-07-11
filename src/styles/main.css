@@ -4,6 +4,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background:#9e415db9; 
+    user-select:none;
 }
 
 .container{
@@ -44,11 +45,11 @@ h2 {
 }
 
 .game{
+    border:1px solid #ffffff;
     width: 430px;
     height:430px;
-    border:1px solid #ffffff;
     flex-wrap:wrap;
-    gap::10px;
+    gap:10px;
     transform-style:preserve-3d;
     perspective:500px;
 }
@@ -61,4 +62,19 @@ h2 {
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
+    
+    font-size: 3em;
+    transform: rotateY(180deg);
+    transition:0.25s;
+}
+
+.item::after{
+    content: " ";
+    position: absolute;
+    inset:0;
+    background: #a15555;
+    opacity: 0.85;
+    transition:0.25s;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
 }
