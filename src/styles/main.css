@@ -72,9 +72,8 @@ h2 {
     content: "";
     position: absolute;
     inset: 0;
-    background: #aa3e3e;
+    background: #d8aaaa;
     transition:0.25s;
-    opacity: 0.85;
     transform: rotateY(0deg);
     backface-visibility: hidden;
 }
